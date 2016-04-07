@@ -29,6 +29,6 @@ simple_test() ->
     ?assertEqual([0.0,90.0,180.0,270.0],process_a_list([0.0,90.0,180.0,270.0])).
 
 shift_test() ->
-    ?assertEqual([0.0,90.0,100.0,270.0],process_a_list([0.0,90.0,100.0,270.0])).
+    ?assertEqual([0.0,50.0,180.0,230.0],process_a_list([0.0,90.0,100.0,270.0])).
 							    
 -endif.
