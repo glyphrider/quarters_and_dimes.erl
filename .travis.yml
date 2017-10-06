@@ -1,8 +1,9 @@
 language: erlang
 otp_release:
+  - 19.3
   - 17.5
   - R16B03-1
   - R15B03
 script:
   - erlc -DTEST quarters_and_dimes.erl
-  - erl -noinput -s eunit test -s init stop
+  - erl -noinput -s quarters_and_dimes test -s init stop
